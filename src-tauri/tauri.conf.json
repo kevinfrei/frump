@@ -1,7 +1,7 @@
 {
-  "productName": "frump",
-  "version": "0.1.0",
-  "identifier": "com.frump.app",
+  "productName": "tap",
+  "version": "0.0.1",
+  "identifier": "com.tap.app",
   "build": {
     "beforeDevCommand": "bun run dev",
     "devUrl": "http://localhost:1420",
@@ -11,7 +11,7 @@
   "app": {
     "windows": [
       {
-        "title": "frump",
+        "title": "tap",
         "width": 800,
         "height": 600
       }

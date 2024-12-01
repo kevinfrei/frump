@@ -1,14 +1,14 @@
 [package]
-name = "frump"
-version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+name = "tap"
+version = "0.0.1"
+description = "Tauri Audio Player"
+authors = ["Kevin Frei"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
-name = "frump_lib"
+name = "tap_lib"
 crate-type = ["lib", "cdylib", "staticlib"]
 
 [build-dependencies]
