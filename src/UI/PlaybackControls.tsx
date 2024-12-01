@@ -2,16 +2,16 @@ import { MakeLog } from '@freik/logger';
 import { onRejected } from '@freik/web-utils';
 import { useAtom, useAtomValue } from 'jotai';
 import { ForwardedRef, MouseEventHandler, useCallback } from 'react';
-import { isMutableRefObject } from '../Tools.ts';
+// import { isMutableRefObject } from '../Tools.ts';
 import './styles/PlaybackControls.css';
 import { hasAnySongsState, hasNextSongState, hasPrevSongState, isPlayingState, repeatState, shuffleState } from '../Jotai/PlaybackState.ts';
 
 const { log, wrn } = MakeLog('EMP:render:SongControls');
 
-/*export function onClickPlayPause(
+function onClickPlayPause(
   audioRef: ForwardedRef<HTMLAudioElement>,
 ): void {
-  if (!isMutableRefObject<HTMLAudioElement>(audioRef)) {
+/*  if (!isMutableRefObject<HTMLAudioElement>(audioRef)) {
     wrn('Clicking but no audio element');
     return;
   }
@@ -29,9 +29,15 @@ const { log, wrn } = MakeLog('EMP:render:SongControls');
       );
     }
     return isPlaying;
-  });
+  });*/
 }
-*/
+
+async function MaybePlayNext(skip:boolean) : Promise<void> {
+  return Promise.resolve();
+}
+async function MaybePlayPrev() : Promise<void> {
+  return Promise.resolve();
+}
 
 export type PlaybackControlsProps = {
   audioRef: ForwardedRef<HTMLAudioElement>;
